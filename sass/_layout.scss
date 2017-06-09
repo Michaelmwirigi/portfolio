@@ -1,0 +1,118 @@
+//Here you add the page structure
+body, p, h1, h2, h3, h4, h5, h6, a, div, span, body{
+  font-family: 'Montserrat', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  height: inherit !important;
+  color: #2b2b2b;
+}
+
+.navigation_modal{
+  .ui.menu{
+    background: transparent;
+    .item{
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.7rem;
+      &:hover{
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
+.ui.grid{
+  margin: 0;
+  &.topmenu{
+    .ui.menu{
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      .item.header_item{
+        font-weight: 500;
+        color: rgba(0,0,0,0.7);
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &.homepage{
+    position: relative;
+    top: 33%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    h3{
+      font-weight: 500;
+      color: rgba(0,0,0,0.6);
+      font-size: 17px;
+    }
+    p{
+      font-weight: 300;
+      font-size: 15px;
+      text-align: left;
+      color: rgba(0,0,0,0.6);
+    }
+    .social_links{
+      p{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin: 0;
+        &.links{
+          float: right;
+          a{
+            i{
+              font-size: 1.5rem;
+              &.facebook{
+                color: #3b5998;
+              }
+              &.twitter{
+                color: #00aced;
+              }
+              &.youtube{
+                color: #e62117;
+              }
+              &.linkedin{
+                color: #0077b5;
+              }
+            }
+          }
+        }
+      }
+      .title{
+        display: block;
+        font-weight: 400;
+        margin-top: 0.9rem;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu {
+    .item, .menu {
+      display: none;
+    }
+    .toc.item {
+      display: block;
+    }
+  }
+  .masthead {
+    &.segment {
+      min-height: 350px;
+    }
+    h1.ui.header {
+      font-size: 2em;
+      margin-top: 1.5em;
+    }
+    h2 {
+      margin-top: 0.5em;
+      font-size: 1.5em;
+    }
+  }
+}
